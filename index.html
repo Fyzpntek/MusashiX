@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusashiX - Free CyberSecurity Tools!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Tombol menu di sisi kiri -->
+        <button class="menu-btn" id="menuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-bug"></i>
+            </div>
+            <h1>MusashiX Tools</h1>
+        </div>
+        
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu" id="dropdownMenu">
+            <h3>Tools Categories</h3>
+            
+            <div class="menu-category">
+                <h4><i class="fas fa-lock"></i> Decode/Encode</h4>
+                <div class="menu-items">
+                    <div class="menu-item"><i class="fas fa-code"></i> Base64 Encode</div>
+                    <div class="menu-item"><i class="fas fa-code"></i> Base64 Decode</div>
+                    <div class="menu-item"><i class="fas fa-link"></i> URL Encode</div>
+                    <div class="menu-item"><i class="fas fa-link"></i> URL Decode</div>
+                    <div class="menu-item"><i class="fas fa-hashtag"></i> MD5 Hash</div>
+                    <div class="menu-item"><i class="fas fa-hashtag"></i> SHA256 Hash</div>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <h4><i class="fas fa-shield-alt"></i> Cyber Security</h4>
+                <div class="menu-items">
+                    <div class="menu-item"><i class="fas fa-search-location"></i> IP Lookup</div>
+                    <div class="menu-item"><i class="fas fa-globe"></i> WHOIS Lookup</div>
+                    <div class="menu-item"><i class="fas fa-plug"></i> Port Scanner</div>
+                    <div class="menu-item"><i class="fas fa-fingerprint"></i> SSL Checker</div>
+                    <div class="menu-item"><i class="fas fa-shield-virus"></i> Malware Scan</div>
+                    <div class="menu-item"><i class="fas fa-user-secret"></i> VPN Check</div>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <h4><i class="fas fa-skull"></i> Pentesting</h4>
+                <div class="menu-items">
+                    <div class="menu-item"><i class="fas fa-crosshairs"></i> XSS Tester</div>
+                    <div class="menu-item"><i class="fas fa-database"></i> SQL Injection</div>
+                    <div class="menu-item"><i class="fas fa-file-contract"></i> CSRF Tester</div>
+                    <div class="menu-item"><i class="fas fa-key"></i> Password Cracker</div>
+                    <div class="menu-item"><i class="fas fa-network-wired"></i> Network Scan</div>
+                    <div class="menu-item"><i class="fas fa-bug"></i> Vulnerability Scan</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Welcome Section -->
+    <section class="welcome-section">
+    <h1>Free Online Cybersecurity & Development Tools</h1> <!-- Ubah h2 menjadi h1 -->
+    <p>MusashiX Tools provides the best free online tools for encoding, decoding, penetration testing, and security analysis. 
+       Our toolkit includes Base64 encoder/decoder, URL encoder/decoder, MD5 generator, SHA256 hasher, IP lookup, 
+       WHOIS lookup, port scanner, SSL checker, and more cybersecurity utilities trusted by professionals worldwide.</p>
+    </section>
+        <!-- Info Cards -->
+        <section class="card-grid">
+            <!-- IP Address Card -->
+            <div class="card card-ip">
+                <div class="card-content">
+                    <div class="card-header">
+                        <div class="card-icon icon-ip">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div>
+                            <div class="card-title">IP Address</div>
+                            <div id="ip-address" class="card-value">
+                                <span class="loading"></span> Loading...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Browser Card -->
+            <div class="card card-browser">
+                <div class="card-content">
+                    <div class="card-header">
+                        <div class="card-icon icon-browser">
+                            <i class="fas fa-window-restore"></i>
+                        </div>
+                        <div>
+                            <div class="card-title">Browser</div>
+                            <div id="user-agent" class="card-value">
+                                <span class="loading"></span> Loading...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Visitors Card -->
+            <div class="card card-visitors">
+                <div class="card-content">
+                    <div class="card-header">
+                        <div class="card-icon icon-visitors">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div>
+                            <div class="card-title">Visitors</div>
+                            <div id="visitor-count" class="card-value">
+                                <span class="loading"></span> Loading...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tools Section -->
+        <section class="tools-section">
+            <h2 class="section-title">Explore Our Tools</h2>
+            <div class="tools-grid">
+                <!-- Decode/Encode Card -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon decode">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="tool-title">Decode/Encode</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> Base64 Encode/Decode</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> URL Encode/Decode</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> HTML Entities</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> JWT Decoder</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> GZip Compression</div>
+                    </div>
+                </div>
+                
+                <!-- Cyber Security Card -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon security">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="tool-title">Cyber Security</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> IP & Domain Lookup</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> SSL Certificate Check</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> Malware Scanner</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> HTTP Header Check</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> Password Strength Tester</div>
+                    </div>
+                </div>
+                
+                <!-- Pentesting Card -->
+                <div class="tool-card">
+                    <div class="tool-header">
+                        <div class="tool-icon pentest">
+                            <i class="fas fa-skull"></i>
+                        </div>
+                        <h3 class="tool-title">Pentesting</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> XSS Vulnerability Scanner</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> SQL Injection Tester</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> Port Scanner</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> CSRF Exploit Generator</div>
+                        <div class="tool-item"><i class="fas fa-arrow-right"></i> Network Vulnerability Scan</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#disclaimer">Disclaimer</a>
+                <a href="#privacy-policy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <p class="copyright">© <span id="current-year"></span> MusashiX | Made with <span class="heart">❤</span> for Security Professionals</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
